@@ -10,7 +10,7 @@
     "lint": "eslint src test",
     "lint-fix": "eslint --fix src test",
     "jest": "jest",
-    "test": "npm run lint && npm run jest"
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
