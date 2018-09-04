@@ -1,0 +1,39 @@
+{
+  "name": "learn-travis",
+  "version": "1.0.1",
+  "engines": {
+    "node": "8.9.x"
+  },
+  "description": "An example to show how to get TravisCI integrated",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "lint": "eslint src test",
+    "lint-fix": "eslint --fix src test",
+    "jest": "jest",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humphd/learn-travis.git"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "forceExit": true
+  },
+  "author": "humphd",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "jest": "^21.2.1",
+    "nock": "^9.1.3",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "image-to-ascii": "^3.0.9",
+    "redis": "^2.8.0",
+    "version-healthcheck": "^0.1.2"
+  }
+}
