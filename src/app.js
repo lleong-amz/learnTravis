@@ -1,7 +1,7 @@
 var image = require('./image');
 var twitter = require('./twitter');
-
-var version = require('version-healthcheck');
+var twitter1 = require('./twitter');
+     ersion = require('version-healthcheck');
 var express = require('express');
 var app = express();
 
